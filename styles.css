@@ -1,0 +1,114 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* 프로필 섹션 */
+.profile {
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+}
+
+.profile-image {
+    flex: 1;
+    max-width: 300px;
+}
+
+.profile-image img {
+    width: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.profile-info {
+    flex: 2;
+    padding-left: 20px;
+}
+
+.profile-info h1 {
+    font-size: 2em;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.profile-info p {
+    font-size: 1.1em;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+/* 경력 섹션 */
+.career {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.career h2 {
+    font-size: 1.8em;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.career-item {
+    margin-bottom: 20px;
+}
+
+.career-item h3 {
+    font-size: 1.4em;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.career-item p {
+    font-size: 1.1em;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.career-item ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+.career-item ul li {
+    font-size: 1em;
+    color: #555;
+    margin-bottom: 5px;
+}
+
+/* 반응형 디자인 */
+@media (max-width: 768px) {
+    .profile {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .profile-image {
+        max-width: 200px;
+        margin-bottom: 20px;
+    }
+
+    .profile-info {
+        padding-left: 0;
+    }
+}   
